@@ -1,5 +1,4 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
 
 /*
@@ -1637,7 +1636,7 @@ body {
 body, input, select, textarea {
 	color: white;
 	font-family: helvetica;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: bolder;
 	line-height: 2;
 }
@@ -1645,21 +1644,21 @@ body, input, select, textarea {
 @media screen and (max-width: 1680px) {
 
 	body, input, select, textarea {
-		font-size: 15pt;
+		font-size: 1.5rem;
 	}
 }
 
 @media screen and (max-width: 1280px) {
 
 	body, input, select, textarea {
-		font-size: 12pt;
+		font-size: 1.5rem;
 	}
 }
 
 @media screen and (max-width: 360px) {
 
 	body, input, select, textarea {
-		font-size: 11pt;
+		font-size: 1.5rem;
 	}
 }
 
@@ -1691,21 +1690,23 @@ p {
 	margin: 0 0 2em 0;
 }
 
-h1, h2, h3 {
-	font-family: 'Iskoola Pota','Lucida Grande', Geneva, Verdana, sans-serif;
+h1 {
+	font-family: 'Iskoola Pota','Georgia', Times, serif;
 	color: #ffffff;
 	font-weight: bold;
-	line-height: 1.5;
-	margin: 0 0 0.5em 0;
+	line-height: .5;
+	margin: 0 0 .5em 0;
 }
 
 #Name {
-	font-size: 1.5rem;
-	font-family: Andalus;
+	font-size: 1.6rem;
+	padding-top: 2vh;
+	margin-bottom: 5vh;
+	border-bottom: 1px solid rgba(250, 200, 200, .7);
 }
 
 .greeting {
-	font-family: Andalus;
+	/*font-family: Andalus;*/
 	margin-left: 10rem;
 	padding-left: 10rem;
 }
@@ -1741,6 +1742,7 @@ h1 {
 	line-height: .05;
 	text-align: center;
 }
+
 .signature {
 	text-align: left;
 	font-family: 'Segoe Script';
@@ -1776,6 +1778,8 @@ h2 {
 
 h3 {
 	font-size: 1.1em;
+	color:rgb(222, 214, 244);
+
 }
 
 h4 {
@@ -2435,7 +2439,7 @@ textarea {
 
 select option {
 	/*VIOLET*/
-	background-color: #312450;
+	background-color: inherit;
 	color: #ffffff;
 }
 
@@ -2579,41 +2583,39 @@ input[type="radio"] {
 		width: 2.5em;
 		height: 2.5em;
 		display: block;
-		/*background: #ffffff;*/
+		color:rgb(232, 224, 244);
 		border-radius: 100%;
-		/*VIOLET*/
-		color: #312450;
 		text-align: center;
 		line-height: 2.5em;
 		margin: 0 0 1.3em 0;
 	}
 
 		.icon.major:before {
-			font-size: 1.25em;
+			font-size: 1.6em;
 		}
 
 .wrapper.style1 .icon.major:before {
-	color: #5e42a6;
+	color:rgb(212, 215, 244);
 }
 
 .wrapper.style1-alt .icon.major:before {
-	color: #493382;
+	color:rgb(212, 204, 234);
 }
 
 .wrapper.style2 .icon.major:before {
-	color: #5052b5;
+	color:rgb(212, 204, 234);
 }
 
 .wrapper.style2-alt .icon.major:before {
-	color: #3e4094;
+	color:rgb(212, 204, 234);
 }
 
 .wrapper.style3 .icon.major:before {
-	color: #493382;
+	color:rgb(212, 204, 234);
 }
 
 .wrapper.style3-alt .icon.major:before {
-	color: #953d75;
+	color:rgb(212, 204, 234);
 }
 
 /* IMAGES */
@@ -2626,7 +2628,6 @@ input[type="radio"] {
 
 	.image img {
 		margin: 7px;
-		/*border-radius: 50%;*/
 		box-shadow: 2px 2px 4px rgbA(0, 0, 0, .5);
 		display: block;
 	}
@@ -2720,8 +2721,7 @@ ul {
 			display: inline-block;
 			padding: 0 0.75em 0 0;
 			font-size: 26px;
-			color: rgb(194, 181, 229);
-			/*color:rgb(212, 204, 234);*/
+			color:rgb(212, 204, 234);
 		}
 
 			ul.icons li:last-child {
@@ -3452,17 +3452,17 @@ body.is-ie .wrapper.fullscreen {
 				}
 
 					#header > nav > ul > li a:hover {
-						color: rgb(111, 20, 111);
-						background-color: #3c2c62;
+						color: #3c2c62;
+						/*background-color: #3c2c62;*/
 					}
 
 					#header > nav > ul > li a.active {
 						color: #f4f4f4;
 					}
-a:hover {
-	color: rgba(111, 20, 111,.7);
-	background-color: #3c2c62;
 
+a:hover {
+	color: #3c2c62;
+	/*background-color: #3c2c62;*/
 }
 
 @media screen and (max-width: 736px) {
@@ -3897,12 +3897,11 @@ body.is-loading #sidebar nav ul li {
 	}
 }
 
-/* k */
+/* INTRODUCTION ON HOME PAGE */
 
 #intro {
 	background-attachment: fixed;
 	background-image: url('../../images/alexander-ramsey-mountains.jpg');
-	/*background-image: url("images/intro.svg");*/
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -4264,202 +4263,128 @@ body.is-loading-2 #viewer .slide {
 
 
 /************* PORTFOLIO PAGE ************/
-/********* HEADER **********/
-#portfolio-header {
-	padding: -10px;
-	margin: -10px;
-	align-content: center;
-	text-align: center;
-	background-image: url('../../images/CodePrintscreen.png');
+/********* PORTFOLIO PAGE HEADER *********/
+#portfolio-title {
+	margin: 2% 2% 0 3%;
+	border-bottom: 1px solid rgb(122,108,160);
 }
-	/******** PORTFOLIO PAGE HEADER IMAGE ********/
-	#portfolio-header .inner {
-		padding: -10px;
-		margin: -10px;
-		box-shadow: 5px 50px 50px rgbA(0, 0, 0, .3);
-	}
 
+#portfolio-page a {
+	text-decoration: none;
+}
+/******** PORTFOLIO PAGE PROJECTS *********/
 .project {
 	border-bottom: 1px solid rgb(122,108,160);
 	margin: 2% 10% 0 15%;
 	padding-bottom: 2%;
 }
 
-hr {
-	color: rgba(16,16,16,0.2);
-}
+	.project img {
+		border-radius: 2%;
+		margin-right: 0px;
+		max-width: 100vw;
+		box-shadow: 3px 3px 10px rgba(0, 0, 0,.3);
+	}
+/*************** ABOUT PAGE **************/
 
-#portfolio-content {
-	margin: 0 5% 10% 20%;
-	padding-right: 10%;
-	align-content: center;
-	background-color: #312450;
-}
-
-.project img {
-	border-radius: 3%;
-	margin-right: 20px;
-	max-width: 90vw;
-	box-shadow: 5px 5px 10px rgbA(0, 0, 0, .6);
-}
-/******** ABOUT PAGE HEADER *******/
 #about-me-page {
 	background-color: white;
-}
-.contact {
-	background-color: #5e42a6;
-}
-.icons:hover {
-	color: white;
-}
-#about-me-header {
-	text-align: center;
+	color: rgb(10, 0, 40);
 }
 
-	#about-me-header h1 {
-		font-size: 3rem;
-		color: rgb(215, 195, 265);
-		/* ABOUT HEADER TRANSITION(S)*/
-		transition-property: color;
-		/*transition-duration: .2s;*/
-		transition-timing-function: ease-in-out;
-		text-shadow: 1px 1px 2px black; 
-	}
-		/* ABOUT HEADER TRANSITION(S) */
-		#about-me-header h1:hover {
-			color: rgb(170, 150, 220);
-		}
-
-	#about-me-header h2, h3 {
-		/*font-family: 'Segoe Print';*/
-		color: rgb(170, 150, 220);
-		font-size: 1.8rem;
-		background-color: white;
-		/* ABOUT HEADER TRANSITION(S)*/
-		transition-property: color;
-		transition-duration: .2s;
-		transition-timing-function: ease-in-out;
-	}
-		/* ABOUT HEADER TRANSITION(S) */
-		#about-me-header h3:hover {
-			color: rgb(140, 130, 180);
-		}
-/* ABOUT IMAGE(S) */
+/* ABOUT IMAGE(S) (ON MAIN PAGE) */
 .about-me-image {
-	float: right;
-	width: 20vw;
-	height: auto;
-	border-radius: 5%;
-	box-shadow: 5px 5px 10px rgbA(50, 0, 50,.5);
-}
-.about-me-image-left {
 	float: left;
-	width: 20vw;
 	height: auto;
+	width: 20vw;
+	margin: 0 15px 0 0;
 	border-radius: 5%;
-	margin: 0 1vw 0 0;
-	box-shadow: 5px 5px 10px rgbA(50, 0, 50,.5);
-}	
+	box-shadow: 3px 3px 10px rgba(0, 0, 0,.6);
+	/*display: block;*/
+}
+.about-me-page-image {
+	float: left;
+	height: auto;
+	width: 20vw;
+	margin-left: 3vw;
+	border-radius: 5%;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0,.6);
+
+}
+
+.about-me-image-left {
+	/*margin: 25px 0 10px 25px;*/
+	width: 20vw;
+	float: right;
+	border-radius: 5%;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0,.6);
+	/*display: block;*/
+}
 
 /******** ABOUT PAGE BODY CONTENT *******/
-#about-connect fieldset label{
-	background-color: #5e42a6;
-}
-#about-label{
-	background-color: #5e42a6;
-}
 #about-me-content {
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 	margin: 2%;
 	padding: 2vh 5vw;
-	font-family: 'Segoe Print';
-	color: rgb(70, 0, 70);
+	font-family: helvetica;
 	background-color: white;
-	/*TRANSITION(S)*/
-	transition-property: background, color, font-size;
-	transition-timing-function: ease-in-out;
-	position: relative;
 }
-	/* ABOUT CONTENT TRANSITION(S) */
-	#about-me-content:hover {
-		font-size: 2rem;
-		color: rgb(70, 0, 70);
-		background-color: white;
-	}
-	.story-images {
-		width: auto;
-		height: 10vh;
-		border-radius: 10%;
-		box-shadow: 5px 5px 10px rgbA(0, 0, 50,.5);
-	}
+#about-me-content h4{
+	font-size:3rem;
+	margin: 0 0 0 30%;
+	padding: 2vh 5vw;
+	font-family: 'Segoe Print';
+}
+.story-images {
+	width: auto;
+	height: 15vh;
+	border-radius: 10%;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0,.3);
+	display:inline;
+}
 .story-images-right {
 	float: right;
 	width: auto;
-	height: 10vh;
+	height: 15vh;
 	border-radius: 10%;
-	box-shadow: 5px 5px 10px rgbA(0, 0, 50,.5);
+	box-shadow: 3px 3px 10px rgba(0, 0, 0,.3);
+	display:inline;
 }
-.story-images-left {
-	float: left;
+
+.story-images-learning {
 	width: auto;
 	height: 10vh;
-	border-radius: 10%;
-	box-shadow: 5px 5px 10px rgbA(0, 0, 50,.5);
+	border-radius: 6%;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0,.3);
 }
 
 #create-your-future-image {
 	width: auto;
 	height: 20vh;
 	border-radius: 10%;
-	box-shadow: 5px 5px 10px rgbA(0, 0, 50,.3);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0,.3);
 	float: left;
 	margin-right: 2rem;
 }
+
 #about-me-salutation {
-	font-size: 1.6rem;
-	color: rgb(120, 0, 80);
+	font-size: 2rem;
+	color: rgb(80, 0, 120);
 	background-color: white;
 	font-family: 'Segoe Script';
 	text-align: center;
-	transition-property: font-size, color;
+	transition-property: color;
 	transition-duration: .4s;
 	transition-delay: .1s;
 	transition-timing-function: ease-in-out;
-	border-top:1px solid rgb(240, 230, 255);
-	margin-top: 4vh;
-	padding: 1rem 6rem;
+	border-top: 1px solid rgb(230, 200, 230);
+	padding: 2rem 6rem;
 }
 	/* ABOUT HEADER TRANSITION(S) */
 	#about-me-salutation:hover {
-		font-size: 2rem;
-		color: rgb(170, 0, 100);
+		color: rgb(10, 0, 70);
 	}
 
-/* ABOUT IMAGE ON MAIN PAGE */
-.about-me-image {
-	margin: 25px 0 10px 25px;
-	border-radius: 50%;
-	box-shadow: 2px 2px 4px rgbA(0, 0, 0, .5);
-	display: block;
-}
-
-#about-me-img {
-	transition-property: border-radius;
-	transition-duration: 2s;
-	transition-delay: 1s;
-	transition-timing-function: ease-out;
-}
-
-	#about-me-img:fullscreen {
-		outline-color: aquamarine;
-	}
-
-	#about-me-img:hover {
-		background: violet;
-		border-radius: 50%;
-		opacity: .5;
-		transform: rotateY(180deg);
-	}
 
 .box:checked {
 	opacity: 0.8;
@@ -4479,73 +4404,55 @@ hr {
 
 
 
-/*.about-section-right {
-	color: rgb(175, 156, 229);
-}
-
-.about-section-left {
-	color: rgb(175, 156, 229);
-}
-.about-me-essay-subtitle {
-	font-family: 'Segoe Script';
-}*/
-/*.about-me-image {
-	margin: 25px 0 10px 25px;
-	border-radius: 50%;
-	box-shadow: 2px 2px 4px rgbA(0, 0, 0, .5);
-	display: block;
-}*/
-
 /*FLEX BOXES:*/
-.container{
-	display:flex;
+.container {
+	display: flex;
 	/*PUSH BOXES : rt, lt, ctr, space in between boxes only, space between boxes and margins*/
-	justify-content:flex-end;
-	justify-content:flex-start;
-	justify-content:center;
-	justify-content:space-around;
-	justify-content:space-between;
+	justify-content: flex-end;
+	justify-content: flex-start;
+	justify-content: center;
+	justify-content: space-around;
+	justify-content: space-between;
 }
 
-.boxes-in-container{
+.boxes-in-container {
 	/*BOX width :*/
-	flex-basis:20%;
+	flex-basis: 20%;
 }
 /* MODAL*/
-#portolio-modal-page{
-	background-color:gainsboro;
-	color:black;
-	color:rgb(60, 60, 60);
-}
-.portfolio-button{
-	background:pink;
-	padding:1em 2em;
-	color:white;
-	border:0;
-}
-.portfolio-button:hover{
-	background:slategrey;
+#portolio-modal-page {
+	background-color: gainsboro;
+	color: black;
+	color: rgb(60, 60, 60);
 }
 
-.modal{
-	display:none;
-	position:fixed;
+.portfolio-button {
+	background: pink;
+	padding: 1em 2em;
+	color: white;
+	border: 0;
+}
+
+	.portfolio-button:hover {
+		background: slategrey;
+	}
+
+.modal {
+	display: none;
+	position: fixed;
 	/*Z-INDEX: the order of elements the higher the more upfront the element will be*/
-	z-index:1;
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	overflow:auto;
-	background-color:rgbA(0, 0, 0, .5);
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgbA(0, 0, 0, .5);
 }
 
-.modal-content{
+.modal-content {
 	/*color:black;
 	background-color:dimgray;*/
-	margin:50% 0;    
-	padding:30%;
+	margin: 50% 0;
+	padding: 30%;
 }
-
-
-

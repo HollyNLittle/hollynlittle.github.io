@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-<!-- NAVBAR -->
+    <!-- NAVBAR -->
     <div class="header clearfix">
         <nav>
             <ul class="nav nav-pills pull-right navigation">
@@ -41,16 +41,12 @@
                     <h1>Holly N. Little</h1>
                 </div>
                 <div id="greeting">
-                    <h2>
+                    <p>
                         Hello! I'm Holly, <br>
                         a software developer <br>
                         in the making.<br>
-                    </h2>
-                    <div class="signature">
-                        <p>
-                            Thank you for visiting my site.
-                        </p>
-                    </div>
+                        Thank you for visiting my site.
+                    </p>
                 </div>
                 <ul class="actions">
                     <li><a href="#one" class="button scrolly">View Portfolio</a></li>
@@ -65,7 +61,7 @@
                 <div class="content">
                     <div class="inner">
                         <h1>Portfolio</h1>
-                        <h2>Click to view information regarding projects I have completed using C#, CSS3, HTML5, JavaScript and ASP.NET MVC.</h2>
+                        <p>Click to view information regarding projects I have completed using C#, CSS3, HTML5, JavaScript and ASP.NET MVC.</p>
                         <ul class="actions">
                             <li><a href="Portfolio.html" class="button">View</a></li>
                         </ul>
@@ -77,9 +73,9 @@
         <section id="two" class="wrapper style3 fade-up">
             <div class="inner">
                 <h1>Skills</h1>
-                <h2>
+                <p>
                     As a software developer in training with a passion for programming, I have been hard at work developing my skillset.
-                </h2>
+                </p>
                 <div class="features">
                     <section>
                         <span class="icon major fa-code"></span>
@@ -96,15 +92,15 @@
                     <section>
                         <span class="icon major fa-html5"></span>
 
-                        <h3>HTML & CSS</h3>
+                        <h3>HTML5 & CSS3</h3>
                     </section>
                     <section>
                         <span class="icon major fa-code"></span>
-                        <h3>JavaScript & jQuery</h3>
+                        <h3>JavaScript</h3>
                     </section>
                     <section>
                         <span class="icon major fa-file-code-o"></span>
-                        <h3>Angular</h3>
+                        <h3>jQuery</h3>
                     </section>
                     <section>
                         <span class="icon major fa-tv"></span>
@@ -112,7 +108,7 @@
                     </section>
                     <section>
                         <span class="icon major fa-github"></span>
-                        <h3>Github</h3>
+                        <h3>Github/Source control</h3>
                     </section>
                 </div>
             </div>
@@ -120,7 +116,7 @@
         <!-------------------------- THREE ------------------------------>
         <section id="five" class="wrapper style2 spotlights">
             <section class="about-me">
-                <a href="About.html"><img src="images/MyPhoto.jpg" class="about-me-image" alt="" data-position="top center" /></a>
+                <a href="About.html"><img src="images/MyPhoto.jpg" class="about-me-page-image" alt="" data-position="top center" /></a>
                 <div class="content">
                     <div class="inner">
                         <h1 id="about-header">About Me</h1>
@@ -132,12 +128,12 @@
                         <p>
                             In August 2017, I enrolled in We Can Code IT, an intensive, full-stack coding bootcamp.  In a matter of months,
                             I have learned so much, MVC ASP.NET, MS SQL, C#, HTML5, CSS3, JavaScript, jQuery and more.  It has
-                            been a fun and challenging experience.  Now, I am both nervous and excited as we are completing our final projects 
+                            been a fun and challenging experience.  Now, I am both nervous and excited as we are completing our final projects
                             and will present them soon.
                         </p>
                         <p>
                             If you are interested in knowing
-                            more about me and my journey, 
+                            more about me and my journey,
                             please click on the My Story button.
                         </p>
                         <ul class="actions">
@@ -151,29 +147,38 @@
         <section id="four" class="wrapper style1 fade-up">
             <div class="inner">
                 <h2>Get in Touch</h2>
-                <h4>Comments, questions and feedback are welcome.</h4>
+                <p>Comments, questions and feedback are welcome.</p>
                 <div class="split style1">
                     <section>
-                        <form method="post" action="#">
+                        <form id="contactform" action="https://formspree.io/hollynicolelittle@gmail.com" method="post">
                             <div class="field half first">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" id="name" />
+                                <input type="text" name="name" id="name" placeholder="Your name"/>
                             </div>
                             <div class="field half">
                                 <label for="email">Email</label>
-                                <input type="text" name="email" id="email" />
+                                <input type="text" name="email" id="email" placeholder="Your email"/>
                             </div>
                             <div class="field">
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message" rows="5"></textarea>
+                                <textarea name="message" id="message" placeholder="Your message" rows="5"></textarea>
                             </div>
                             <ul class="actions">
                                 <!-------------------------- EMAIL ------------------------------>
-
-                                <li><a href="#" class="button submit">Send Message</a></li>
+                                    <li><input type="submit" value="Send Message" /></li>
+                                    <li><input type="hidden" name="_subject" value="Website contact" /></li>
+                                    <li><input type="reset" value="Reset Form" /></li>
                             </ul>
                         </form>
                     </section>
+                    <!--<section>
+                        <script>
+                            var contactform = document.getElementById('contactform');
+                            contactform.setAttribute('action',
+                                '//formspree.io/' + 'hollynicolelittle' + '@' + 'gmail' + '.' + 'com');
+                        </script>
+                    </section>-->
+                    
                     <section>
                         <ul class="contact">
                             <li>
@@ -184,7 +189,7 @@
                             </li>
                             <li>
                                 <h2>EMAIL</h2>
-                                <a href="hollynicolelittle@gmail.com">hollynicolelittle@gmail.com</a>
+                                hollynicolelittle@gmail.com
                             </li>
 
                             <li>
@@ -221,7 +226,7 @@
     <!-- Footer -->
     <footer id="footer" class="wrapper style1-alt">
         <div class="inner">
-            <p>&copy;2017 Holly N. Little. All rights reserved.</p>
+            <p>&copy;2017 Holly N. Little</p>
         </div>
     </footer>
 
